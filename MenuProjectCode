@@ -1,0 +1,32 @@
+#This is a password checker program
+whileLoopVariable = False
+def passwordChecker():
+    Username = input("Please input your username: ")
+    Password = input("Please input your password: ")
+
+    PasswordLength = len(Password)
+    print(('*' * PasswordLength))
+    print(Username + " Your password is " + ('*' * PasswordLength) + " is " + str(PasswordLength) + " Characters long ")
+
+def reverseNumber():
+    pass
+
+def starTriangle():
+    numberToConvertString = input("Please input the amount of star triangles pyramid u want")
+    numberToConvert = int(numberToConvertString)
+    i = numberToConvert
+    while i >= 1:
+        print("*" * i)
+        i -= 1
+
+while whileLoopVariable == False:
+    print("1: password checker")
+    print("2: reverse a number")
+    print("3: star triangle converter")
+    menuInput = input("Choose your application to use")
+    if menuInput == "1":
+        passwordChecker()
+    if menuInput == "2":
+        pass
+    if menuInput == "3":
+        starTriangle()
